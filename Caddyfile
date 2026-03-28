@@ -1,0 +1,6 @@
+:80 {
+    root * /app
+    encode gzip zstd
+    php_fastcgi 127.0.0.1:9000
+    file_server
+}
